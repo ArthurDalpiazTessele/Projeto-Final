@@ -2,9 +2,9 @@
 //schemaTypes.js
 
 export default ({
-    name: 'satisfacaoBiopark',
+    name: 'graficos',
     type: 'document',
-    title: 'Satisfação com o Biopark',
+    title: 'Gráficos',
     fields: [
         {
             name: 'grafico',

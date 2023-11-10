@@ -12,12 +12,10 @@ import membros from "../schemas/membros.js"
 import estatutocpa from "../schemas/estatutocpa.js"
 import pilares from "../schemas/pilares.js"
 
-//Resultados
-import satisfacaoInfraestrutura from './satisfacaoInfraestrutura'
-import satisfacaoCurso from './satisfacaoCurso'
-import satisfacaoBiopark from './satisfacaoBiopark'
+//Graficos
+import grafico from "./grafico.js"
 
 //FAQ
 import perguntas from "../schemas/perguntas.js"
 
-export const schemaTypes = [perguntas, qrCode, objetivo, pontosPositivos, diretrizcard, professor, membros, estatutocpa, pilares, satisfacaoInfraestrutura, satisfacaoCurso, satisfacaoBiopark]
+export const schemaTypes = [grafico, perguntas, qrCode, objetivo, pontosPositivos, diretrizcard, professor, membros, estatutocpa, pilares]
