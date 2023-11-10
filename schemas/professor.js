@@ -12,17 +12,17 @@ export default ({
           title: 'Nome'
         },
         {
-          name: 'Cargo',
+          name: 'cargo',
           type: 'string',
           title: 'Cargo'
         },
         {
-          name: 'Bio',
+          name: 'bio',
           type: 'text',
           title: 'Biografia Professor'
         },
         {
-          name: 'Imagem',
+          name: 'imagem',
           type: 'image',
           title: 'Imagem'
         },

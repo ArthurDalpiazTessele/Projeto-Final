@@ -7,28 +7,10 @@ export default ({
     title: 'Pilares dos IES no SINAES',
     fields: [
           {
-            name: 'pilarestitulo',
+            name: 'pilar',
             type: 'string',
-            title: 'Pilares dos IES no SINAES',
+            title: 'Pilar',
             description:'texto'
-          },
-          {
-            name: 'itensAvaliacao',
-            type: 'string',
-            title: 'pilar-1',
-            description:'texto'
-          },
-          {
-            name: 'itensAvaliacao2',
-            type: 'string',
-            title: 'pilar-2',
-            description:'texto'
-          },
-          {
-            name: 'itensAvaliacao3',
-            type: 'string',
-            title: 'pilar-3',
-            description:'texto'
-          },
+          }
     ] 
 })

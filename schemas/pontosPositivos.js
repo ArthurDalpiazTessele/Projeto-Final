@@ -7,14 +7,14 @@ export default({
     title: 'pontosPositivos',
     fields:[
         {
-            name: 'PontoPositivo1',
+            name: 'titulo',
             type: 'string',
-            title: 'Ponto Positivo 1'
+            title: 'Título'
           },
           {
-            name: 'PontoPositivo2',
+            name: 'descricao',
             type: 'string',
-            title: 'Ponto Positivo 2'
+            title: 'Descrição'
           }
     ]
 })
