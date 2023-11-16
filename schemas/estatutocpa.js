@@ -7,7 +7,7 @@ export default ({
     title: 'Estatuto CPA',
     fields: [
           {
-            name: 'estatutocpa',
+            name: 'estatutoCpa',
             type: 'string',
             title: 'Estatuto C.P.A'
           },
