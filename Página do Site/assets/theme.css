@@ -543,6 +543,7 @@ body {
 /*TERMOS E REGULAMENTAÇÕES*/
 .tabcontent {
   text-align: justify;
+  padding-right: 50px;
 }
 
 .container {
