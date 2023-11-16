@@ -2,8 +2,10 @@ async function dadoAsync(){
     var resposta = await fetch("https://vksmkbdz.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22diretrizcard%22%5D%7B%0A+++%22Titulo%22%3A+Titulo%2C%0A+++%22Diretriz%22%3ADiretriz%2C%0A+%7D",{
         method: "GET"
     });
+    
     var minharesposta = await resposta.json();
     console.log(minharesposta.result[0]);
+
     var divtabsconteudo = document.querySelector('div.TabsConteudo')
     
     minharesposta.result.forEach((element, index) => {
@@ -32,23 +34,6 @@ async function dadoAsync(){
         divcard.appendChild(divtextocard)
         divtextocard.appendChild(divtextotitulocard)
         divtextocard.appendChild(divtextoconteudocard)
-
-        
     });
-    
 }
 dadoAsync();
-
-// TabsConteudo classe div
-/* <div class="Card">
-    <div class="NumeroCard">03</div>
-    <div class="TextoCard" style="text-align: justify">
-        <div class="TextoTituloCard">
-        Aumentar a prestação de contas
-        </div>
-        <div class="TextoConteudoCard">
-        Ajuda a aumentar a transparência da instituição e a
-        prestação de contas aos órgãos regulatórios
-        </div>
-    </div>
-</div> */

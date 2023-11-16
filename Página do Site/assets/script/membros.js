@@ -2,6 +2,7 @@ async function dadoAsync(){
     var resposta = await fetch("https://vksmkbdz.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22membros%22%5D%7B%0A+++%22nome%22%3A+nome%2C%0A+++%22cargo%22%3Acargo%2C%0A+++%22bio%22%3Abio%2C%0A+++%22imagem%22%3Aimagem%2C%0A+%7D",{
         method: "GET"
     });
+    
     var minharesposta = await resposta.json();
     console.log(minharesposta.result[0]);
     
@@ -45,7 +46,6 @@ async function dadoAsync(){
         divConteudoPontosTextoSubT.classList.add("ConteudoPontosTextoSubT")
         divConteudoPontosTextoSubT.innerText=`${minharesposta.result[index].subtitulo}`
 
-
         var divComissaoSection1ConteudoDireitaTit = document.createElement("div")
         divComissaoSection1ConteudoDireitaTit.classList.add("ComissaoSection1ConteudoDireitaTit")
         divComissaoSection1ConteudoDireitaTit.classList.add("ComissaoSection1DiretorConteudoTit")
@@ -70,7 +70,6 @@ async function dadoAsync(){
         ul.appendChild(li)
     })
 }
-
 dadoAsync();
 
 
