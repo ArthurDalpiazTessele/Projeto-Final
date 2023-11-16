@@ -1,6 +1,6 @@
 
 async function dadoAsync(){
-    var resposta = await fetch("https://pecgm0gy.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type+%3D%3D+%22faq%22%5D%7B%0A++%22pergunta%22%3Apergunta%2C%0A++%22resposta%22%3Aresposta%2C%0A++%0A%7D",{
+    var resposta = await fetch("https://vksmkbdz.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22perguntas%22%5D%7B%0A+++%22Pergunta%22%3A+Pergunta%2C%0A+++%22Resposta%22%3AResposta%2C%0A+%7D",{
         method: "GET"
     });
     
