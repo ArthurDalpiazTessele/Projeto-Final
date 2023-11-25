@@ -23,11 +23,11 @@ async function dadoAsync(){
         
         var divtextotitulocard = document.createElement(`div`)
         divtextotitulocard.classList.add("TextoTituloCard")
-        divtextotitulocard.innerText=`${minharesposta.result[index].titulo}`
+        divtextotitulocard.innerText=`${minharesposta.result[index].Titulo}`
         
         var divtextoconteudocard = document.createElement(`div`)
         divtextoconteudocard.classList.add("TextoConteudoCard")
-        divtextoconteudocard.innerText=`${minharesposta.result[index].descricao}`
+        divtextoconteudocard.innerText=`${minharesposta.result[index].Diretriz}`
         
         divtabsconteudo.appendChild(divcard)
         divcard.appendChild(divnumerocard)

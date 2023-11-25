@@ -7,12 +7,12 @@ async function dadoAsync(){
     console.log(minharesposta.result[0]);
 
     var estatutoCPA = document.querySelector('p.comissaoCPA')
-    estatutoCPA.innerText = `${minharesposta.result[0].estatutoCPA}`
+    estatutoCPA.innerText = `${minharesposta.result[0].estatutoCpa}`
     
     var conteudoAvaliado = document.querySelector('p.conteudoAvaliado')
-    conteudoAvaliado.innerText = `${minharesposta.result[0].conteudoAvaliado}`
+    conteudoAvaliado.innerText = `${minharesposta.result[0].conteudoavaliado}`
 
     var importanciaAvaliar = document.querySelector('p.ImportanciaDeAvaliar')
-    importanciaAvaliar.innerText = `${minharesposta.result[0].importanciaAvaliar}`
+    importanciaAvaliar.innerText = `${minharesposta.result[0].importanciaemavaliar}`
 }
 dadoAsync();

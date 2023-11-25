@@ -4,7 +4,7 @@ async function dadoAsync(){
     });
     
     var minharesposta = await resposta.json();
-    console.log(minharesposta.result[0].pergunta);
+    // console.log(minharesposta.result[0].Resposta);
     
     minharesposta.result.forEach((element, index) => {
         
@@ -21,7 +21,6 @@ async function dadoAsync(){
         var h5 = document.createElement('h5')
         h5.style="width: 100%;text-align: left;padding: 0px;padding-left: 30px;padding-right: 30px;font-weight: 400;font-size: 15px;letter-spacing: 1px;color: #3B566E;text-decoration: none !important;-webkit-transition: all 0.3s ease 0s;-moz-transition: all 0.3s ease 0s;-o-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;cursor: pointer;padding-top: 20px;padding-bottom: 20px;"
         h5.innerHTML =`<span style="display: inline-block;width: 20px;height: 20px;line-height: 14px;float: left;-webkit-border-radius: 100px;-moz-border-radius: 100px;border-radius: 100px;text-align: center;background: #EB0045;color: #fff;font-size: 12px;margin-right: 20px;align-items: center;justify-content: center;" class="badge" >${index+1}</span> ${minharesposta.result[index].Pergunta} `
-console.log(minharesposta.result[index].Pergunta);
         divcard.appendChild(divcardheader)
         divcardheader.appendChild(divmb0)
         divmb0.appendChild(h5)
@@ -35,7 +34,7 @@ console.log(minharesposta.result[index].Pergunta);
         divcardbody.classList.add("card-body")
 
         var p = document.createElement("p")
-        p.innerText=`${minharesposta.result[index].resposta}`
+        p.innerText=`${minharesposta.result[index].Resposta}`
 
         divcard.appendChild(divfaqcollapse)
         divfaqcollapse.appendChild(divcardbody)

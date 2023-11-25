@@ -3,18 +3,18 @@ async function dadoAsync(){
         method: "GET"
     });
     var minharesposta = await resposta.json();
-    console.log(minharesposta.result[0]);
+    console.log(minharesposta.result);
 
     var descricao = document.querySelector('p.descricao')
     descricao.innerText = `${minharesposta.result[0].descricao}`
 
     var ol = document.querySelector("ol");
     
-    minharesposta.result[0].listaPilar.forEach((element, index) => {
+    minharesposta.resultforEach((element, index) => {
         
         var item = document.createElement(`li`)
         item.classList.add(index)
-        item.innerText = `${minharesposta.result[0].listaPilar[index]}`
+        item.innerText = `${minharesposta.result.pilar[]}`
         ol.appendChild(item)
     });
 }
