@@ -1,10 +1,10 @@
-// schemas/professor.js
+// schemas/membrodestaque.js
 //schemaTypes.js
 
 export default ({
   name: 'membrodestaque',
   type: 'document',
-  title: 'Professor',
+  title: 'MembroDestaque',
   fields: [
         {
           name: 'nome',
@@ -25,16 +25,6 @@ export default ({
           name: 'imagem',
           type: 'image',
           title: 'Imagem'
-        },
-        {
-          name: 'titulo',
-          type: 'string',
-          title: 'Titulo',
-        },
-        {
-          name: 'subtitulo',
-          type: 'string',
-          title: 'SubTitulo',
         },
   ] 
 })

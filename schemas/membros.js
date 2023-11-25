@@ -26,5 +26,15 @@ export default ({
             type: 'image',
             title: 'Imagem'
           },
+          {
+            name: 'titulo',
+            type: 'string',
+            title: 'Titulo',
+          },
+          {
+            name: 'subtitulo',
+            type: 'string',
+            title: 'SubTitulo',
+          },
     ]
 })
