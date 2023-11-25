@@ -5,7 +5,7 @@ import pontosPositivos from "../schemas/pontosPositivos.js"
 import diretrizcard from "../schemas/diretrizesCards.js"
 
 //Comissão Avaliadora
-import professor from "../schemas/professor.js"
+import professor from "../schemas/membrodestaque.js"
 import membros from "../schemas/membros.js"
 
 //Termos e Regulações
@@ -17,5 +17,6 @@ import grafico from "./grafico.js"
 
 //FAQ
 import perguntas from "../schemas/perguntas.js"
+import membrodestaque from "../schemas/membrodestaque.js"
 
-export const schemaTypes = [grafico, perguntas, qrCode, objetivo, pontosPositivos, diretrizcard, professor, membros, estatutocpa, pilares]
+export const schemaTypes = [grafico, perguntas, qrCode, objetivo, pontosPositivos, diretrizcard, membrodestaque, membros, estatutocpa, pilares]

@@ -29,12 +29,12 @@ export default ({
         {
           name: 'titulo',
           type: 'string',
-          title: 'Imagem'
+          title: 'Titulo',
         },
         {
           name: 'subtitulo',
-          type: 'image',
-          title: 'SubTitulo'
+          type: 'string',
+          title: 'SubTitulo',
         },
   ] 
 })
