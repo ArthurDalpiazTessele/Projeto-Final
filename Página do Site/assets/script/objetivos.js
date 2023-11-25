@@ -5,10 +5,10 @@ async function dadoAsync(){
 
     var minharesposta = await resposta.json();
     console.log(minharesposta.result[0]);
-    console.log(minharesposta.result[0].descricao);
+    console.log(minharesposta.result[0].DescricaoDoObjetivo);
 
     var descricao = document.querySelector('div.ConteudoObjetivoTextoConteudo')
-    descricao.innerText = `${minharesposta.result[0].descricao}`
+    descricao.innerText = `${minharesposta.result[0].DescricaoDoObjetivo}`
 
     var divConteudoObjetivoTextoLista = document.querySelector('div.ConteudoObjetivoTextoLista')
 

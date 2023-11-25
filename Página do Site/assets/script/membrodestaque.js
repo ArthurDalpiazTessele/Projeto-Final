@@ -10,7 +10,7 @@ async function dadoAsync(){
     imagem.src = minharesposta.result[0].imagem; 
     
     var h3 = document.querySelector("h3.h3destaque")
-    h3.innerHTML=`${minharesposta.result[0].nome}<span> ${minharesposta.result[0].sobrenome}</span>`
+    h3.innerHTML=`${minharesposta.result[0].nome}<span>`
 
     var h4 = document.querySelector("h4.h4destaque")
     h4.innerText = `${minharesposta.result[0].cargo}`

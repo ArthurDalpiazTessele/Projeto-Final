@@ -2,7 +2,7 @@
 //schemaTypes.js
 
 export default ({
-  name: 'professor',
+  name: 'membrodestaque',
   type: 'document',
   title: 'Professor',
   fields: [
@@ -19,12 +19,22 @@ export default ({
         {
           name: 'bio',
           type: 'text',
-          title: 'Biografia Professor'
+          title: 'Biografia'
         },
         {
           name: 'imagem',
           type: 'image',
           title: 'Imagem'
+        },
+        {
+          name: 'titulo',
+          type: 'string',
+          title: 'Imagem'
+        },
+        {
+          name: 'subtitulo',
+          type: 'image',
+          title: 'SubTitulo'
         },
   ] 
 })
