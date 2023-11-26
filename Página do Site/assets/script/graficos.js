@@ -7,18 +7,21 @@ async function dadoAsync(){
     console.log(minharesposta.result[0]);
 
     var g1 = document.querySelector('img#g1');
-    g1.src = minharesposta.result[0].grafico; 
+    g1.src = minharesposta.result[0].grafico;
+
     var Fig1 = document.querySelector('div.Figura1');
-    Fig1.innerText = `${minharesposta.result[0].descricao}`
+    Fig1.innerHTML = `${minharesposta.result[0].descricao}`
 
     var g2 = document.querySelector('img#g2');
     g2.src = minharesposta.result[0].grafico2;
+
     var Fig2 = document.querySelector('div.Figura2');
-    Fig2.innerText = `${minharesposta.result[0].descricao2}`
+    Fig2.innerHTML = `${minharesposta.result[0].descricao2}`
 
     var g3 = document.querySelector('img#g3');
     g3.src = minharesposta.result[0].grafico3; 
+    
     var Fig3 = document.querySelector('div.Figura3');
-    Fig3.innerText = `${minharesposta.result[0].descricao3}`
+    Fig3.innerHTML = `${minharesposta.result[0].descricao3}`
 }
 dadoAsync();
