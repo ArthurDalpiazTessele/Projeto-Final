@@ -7,15 +7,15 @@ async function dadoAsync(){
     console.log(minharesposta.result[0]);
 
     var imagem = document.querySelector('img.destaque');
-    imagem.src = minharesposta.result[0].imagem; 
+    imagem.src = `${minharesposta.result[0].imagem}`
     
-    var h3 = document.querySelector("h3.h3destaque")
+    var h3 = document.querySelector("h3.destaque")
     h3.innerHTML=`${minharesposta.result[0].nome}<span>`
 
-    var h4 = document.querySelector("h4.h4destaque")
+    var h4 = document.querySelector("h4.destaque")
     h4.innerText = `${minharesposta.result[0].cargo}`
 
     var texto = document.createElement("p");
     texto.innerText()
 }
-dadoAsync();
+dadoAsync(); 

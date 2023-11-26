@@ -1,5 +1,5 @@
 async function dadoAsync(){
-    var resposta = await fetch("https://vksmkbdz.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22membros%22%5D%7B%0A+++%22nome%22%3A+nome%2C%0A+++%22cargo%22%3Acargo%2C%0A+++%22bio%22%3Abio%2C%0A+++%22imagem%22%3Aimagem%2C%0A+%7D",{
+    var resposta = await fetch("https://vksmkbdz.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22membros%22%5D%7B%0A+++%22nome%22%3A+nome%2C%0A+++%22cargo%22%3Acargo%2C%0A+++%22bio%22%3Abio%2C%0A+++%22imagem%22%3Aimagem%2C%0A+++%22titulo%22%3Atitulo%2C%0A+++%22subtitulo%22%3Asubtitulo%2C%0A+%7D",{
         method: "GET"
     });
     
@@ -34,7 +34,7 @@ async function dadoAsync(){
         var figcaption = document.createElement('figcaption');
         
         var h3figcaption = document.createElement('h3')
-        h3figcaption.innerHTML=`${minharesposta.result[index].nome}<span> ${minharesposta.result[index].sobrenome}</span>`
+        h3figcaption.innerHTML=`${minharesposta.result[index].nome}`
         
         var h4figcaption = document.createElement("h4")
         h4figcaption.innerText = `${minharesposta.result[index].cargo}`
@@ -44,12 +44,12 @@ async function dadoAsync(){
 
         var divConteudoPontosTextoSubT = document.createElement("div")
         divConteudoPontosTextoSubT.classList.add("ConteudoPontosTextoSubT")
-        divConteudoPontosTextoSubT.innerText=`${minharesposta.result[index].subtitulo}`
+        divConteudoPontosTextoSubT.innerText=`${minharesposta.result[index].titulo}`
 
         var divComissaoSection1ConteudoDireitaTit = document.createElement("div")
         divComissaoSection1ConteudoDireitaTit.classList.add("ComissaoSection1ConteudoDireitaTit")
         divComissaoSection1ConteudoDireitaTit.classList.add("ComissaoSection1DiretorConteudoTit")
-        divComissaoSection1ConteudoDireitaTit.innerText=`${minharesposta.result[index].titulo}`
+        divComissaoSection1ConteudoDireitaTit.innerText=`${minharesposta.result[index].subtitulo}`
 
         var divComissaoSection1ConteudoEsquerda  = document.createElement("div")
         divComissaoSection1ConteudoEsquerda.classList.add("ComissaoSection1ConteudoEsquerda")

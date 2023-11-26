@@ -17,11 +17,6 @@ export default ({
           title: 'Cargo'
         },
         {
-          name: 'bio',
-          type: 'text',
-          title: 'Biografia'
-        },
-        {
           name: 'imagem',
           type: 'image',
           title: 'Imagem'
