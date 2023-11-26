@@ -4,7 +4,7 @@ async function dadoAsync(){
     });
 
     var minharesposta = await resposta.json();
-    console.log(minharesposta.result);
+    console.log(minharesposta.result[0]);
 
     var g1 = document.querySelector('img#g1');
     g1.src = minharesposta.result[0].grafico; 
