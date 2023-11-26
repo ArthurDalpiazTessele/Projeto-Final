@@ -4,7 +4,7 @@ async function dadoAsync(){
     });
     
     var minharesposta = await resposta.json();
-    // console.log(minharesposta.result[0].Resposta);
+    console.log(minharesposta.result[0].Resposta);
     
     minharesposta.result.forEach((element, index) => {
         
@@ -34,6 +34,7 @@ async function dadoAsync(){
         divcardbody.classList.add("card-body")
 
         var p = document.createElement("p")
+        p.style="text-align: justify"
         p.innerText=`${minharesposta.result[index].Resposta}`
 
         divcard.appendChild(divfaqcollapse)
