@@ -4,13 +4,12 @@
 export default ({
     name: 'pilares',
     type: 'document',
-    title: 'Pilares dos IES no SINAES',
+    title: 'pilares',
     fields: [
           {
-            name: 'pilar',
+            name: 'pilares',
             type: 'string',
-            title: 'Pilar',
-            description:'texto'
+            title: 'pilares',
           }
     ] 
 })

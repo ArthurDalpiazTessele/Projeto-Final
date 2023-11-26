@@ -6,15 +6,14 @@ async function dadoAsync(){
     console.log(minharesposta.result);
 
     var descricao = document.querySelector('p.descricao')
-    descricao.innerText = `${minharesposta.result[0].descricao}`
+    descricao.innerText = `${minharesposta.result[0].pilares}`
 
     var ol = document.querySelector("ol");
     
     minharesposta.resultforEach((element, index) => {
-        
         var item = document.createElement(`li`)
         item.classList.add(index)
-        item.innerText = `${minharesposta.result.pilar[]}`
+        item.innerText = `${minharesposta.result[0].pilares[index]}`
         ol.appendChild(item)
     });
 }

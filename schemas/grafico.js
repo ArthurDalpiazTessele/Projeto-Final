@@ -19,22 +19,22 @@ export default ({
         {
             name: 'grafico2',
             type: 'image',
-            title: 'Gráfico',
+            title: 'Gráfico2',
         },
         {
             name: 'descricao2',
             type: 'string',
-            title: 'Descrição 2',
+            title: 'Descrição2',
         },
         {
             name: 'grafico3',
             type: 'image',
-            title: 'Gráfico',
+            title: 'Gráfico3',
         },
         {
             name: 'descricao3',
             type: 'string',
-            title: 'Descrição ',
+            title: 'Descrição3',
         },
     ]
 })
