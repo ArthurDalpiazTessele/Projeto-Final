@@ -9,32 +9,32 @@ export default ({
           {
             name: 'nome',
             type: 'string',
-            title: 'Nome'
+            title: 'nome'
           },
           {
             name: 'cargo',
             type: 'string',
-            title: 'Cargo'
+            title: 'cargo'
           },
           {
             name: 'bio',
             type: 'text',
-            title: 'Biografia'
+            title: 'biografia'
           },
           {
             name: 'imagem',
             type: 'image',
-            title: 'Imagem'
-          },
-          {
-            name: 'titulo',
-            type: 'string',
-            title: 'Titulo',
+            title: 'imagem'
           },
           {
             name: 'subtitulo',
             type: 'string',
-            title: 'SubTitulo',
+            title: 'subtitulo',
+          },
+          {
+            name: 'titulo',
+            type: 'string',
+            title: 'titulo',
           },
     ]
 })

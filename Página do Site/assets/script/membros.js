@@ -44,12 +44,12 @@ async function dadoAsync(){
 
         var divConteudoPontosTextoSubT = document.createElement("div")
         divConteudoPontosTextoSubT.classList.add("ConteudoPontosTextoSubT")
-        divConteudoPontosTextoSubT.innerText=`${minharesposta.result[index].titulo}`
+        divConteudoPontosTextoSubT.innerText=`${minharesposta.result[index].subtitulo}`
 
         var divComissaoSection1ConteudoDireitaTit = document.createElement("div")
         divComissaoSection1ConteudoDireitaTit.classList.add("ComissaoSection1ConteudoDireitaTit")
         divComissaoSection1ConteudoDireitaTit.classList.add("ComissaoSection1DiretorConteudoTit")
-        divComissaoSection1ConteudoDireitaTit.innerText=`${minharesposta.result[index].subtitulo}`
+        divComissaoSection1ConteudoDireitaTit.innerText=`${minharesposta.result[index].titulo}`
 
         var divComissaoSection1ConteudoEsquerda  = document.createElement("div")
         divComissaoSection1ConteudoEsquerda.classList.add("ComissaoSection1ConteudoEsquerda")
@@ -71,8 +71,3 @@ async function dadoAsync(){
     })
 }
 dadoAsync();
-
-
-
-
-
