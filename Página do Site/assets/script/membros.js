@@ -56,7 +56,7 @@ async function dadoAsync(){
         divComissaoSection1ConteudoEsquerda.classList.add("ComissaoSection1DiretorConteudoSub")
         divComissaoSection1ConteudoEsquerda.innerText=`${minharesposta.result[index].bio}`
 
-        li.appendChild(divparticipantes)
+     li.appendChild(divparticipantes)
         divparticipantes.appendChild(divcolunm1)
         divcolunm1.appendChild(figure)
         figure.appendChild(imagem)
