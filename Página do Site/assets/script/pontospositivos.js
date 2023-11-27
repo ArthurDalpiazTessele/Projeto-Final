@@ -14,7 +14,6 @@ async function dadoAsync(){
     tp2=document.querySelector("div#tp2")
     
     minharesposta.result.forEach((element, index) => {
-
         var divConteudoPontosTextoTopicosItem = document.createElement("div")
         divConteudoPontosTextoTopicosItem.classList.add("ConteudoPontosTextoTopicosItem")
 

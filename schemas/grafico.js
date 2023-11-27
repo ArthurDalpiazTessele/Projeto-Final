@@ -14,27 +14,27 @@ export default ({
         {
             name: 'descricao',
             type: 'string',
-            title: 'Descrição',
+            title: 'descrição',
         },
         {
             name: 'grafico2',
             type: 'image',
-            title: 'Gráfico2',
+            title: 'gráfico2',
         },
         {
             name: 'descricao2',
             type: 'string',
-            title: 'Descrição2',
+            title: 'descrição2',
         },
         {
             name: 'grafico3',
             type: 'image',
-            title: 'Gráfico3',
+            title: 'gráfico3',
         },
         {
             name: 'descricao3',
             type: 'string',
-            title: 'Descrição3',
+            title: 'descrição3',
         },
     ]
 })

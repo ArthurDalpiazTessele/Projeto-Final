@@ -13,7 +13,6 @@ async function dadoAsync(){
     var divConteudoObjetivoTextoLista = document.querySelector('div.ConteudoObjetivoTextoLista')
 
     minharesposta.result[0].itens.forEach((element, index) => {
-        
         var item = document.createElement('div')
         item.classList.add('ConteudoObjetivoTextoListaItem')
         

@@ -7,7 +7,6 @@ async function dadoAsync(){
     console.log(minharesposta.result[0].Resposta);
     
     minharesposta.result.forEach((element, index) => {
-        
         var divcard = document.createElement(`div`)
         divcard.classList.add("card")
 
@@ -28,8 +27,7 @@ async function dadoAsync(){
         var divfaqcollapse = document.createElement("div")
         divfaqcollapse.id="faqCollapse"
         divfaqcollapse.classList.add("collapse")
-
-
+        
         var divcardbody = document.createElement("div")
         divcardbody.classList.add("card-body")
 
